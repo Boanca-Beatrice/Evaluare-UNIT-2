@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/Users/beatrice/Documents/Informatica aplicata/Evaluate Unit2/Beatrice(css).css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+  <h1>Boanca Beatrice-Antonia</h1>
+  <div>
+  <h4><a href="https://mail.google.com">beatriceboanca@gmail.com</a></h4>
+  <br>
+  <br>
+  </div>
+  <div class="LaDreapta">
+  <h3>Specificatii tehnice ale statiei principale de lucru</h3>
+  </div>
+  <br>
+
+<table >
+  <tr>
+    <th>Denumire componenta</th>
+    <th>Producator</th>
+    <th>Parametrii</th> 
+  </tr>
+  <tr>
+    <td>Procesor i7</td>
+    <td>Intel</td>
+    <td>2,7 GHz</td>
+  </tr>
+  <tr>
+    <td>Memorie</td>
+    <td>-</td>
+    <td>8 GB 1600 MHz DDR3</td>
+  </tr>
+  <tr>
+    <td>Placa video</td>
+    <td>Intel</td>
+    <td>HD Graphics 3000 512 MB</td>
+  </tr>
+  <tr>
+    <td>Placa de baza </td>
+    <td>Apple</td>
+    <td>A1278</td>
+  </tr>
+  <tr>
+    <td>Memorie de stocare</td>
+    <td>-</td>
+    <td>128 GB Solid State SATA Drive</td>
+  </tr>
+  </table>
+  <div class="text">
+  <h3 class="centrat" >Structura retelei personale si accesul la internet</h3>
+  <img src="Diagrama.png" width="500" height="400" >
+  <h3 class="Pozitie">Caracterisiticile conexiunii la retea</h3>
+  <ol class="c">
+  <li>Adresa MAC: e4:ce:8f:2c:01:b2</li>
+  <li>Adresa IP: 192.168.100.14</li>
+  <li>Debit la download: 88.97 Mbps</li>
+  <li>Debit la upload: 79.04 Mbps</li>
+</ol> 
+  </div>
+  <button class="Pozitie" type="button" onclick="function()">Utilizare resurse (slideshow)</button>
+  
+  
+  
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="img1.png" style="width:40%">
+</div>
+
+<div class="mySlides fade"> 
+<img src="img2.png" style="width:40%"> 
+</div>
+
+<div class="mySlides fade">
+<img src="img3.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+<img src="img4.png" style="width:40%"> 
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+</script>
+<div class="row">
+  <div class="column">
+    <img src="img1.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img2.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img3.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img4.png" style="width:100%">
+  </div>
+</div>
+</html>
+  
+  
